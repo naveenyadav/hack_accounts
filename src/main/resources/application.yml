@@ -1,0 +1,30 @@
+spring:
+  application:
+     name: accounts-service
+     
+  datasource:
+    url: jdbc:mysql://hack-micro-mysql.cvsb9rhl0vou.us-west-2.rds.amazonaws.com/db_test2018
+    username: zerobuddy
+    password: Hadoop10
+  jpa:
+    generate-ddl: true
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.value} 
+   
+  client:    
+    serviceUrl:
+      defaultZone: http://localhost:5001/eureka
+    
+server:
+  port: 8081
+  
+logging:
+  level: 
+    httpclient.wire: DEBUG 
+    
+    
+  
+ 
+ 
+  
