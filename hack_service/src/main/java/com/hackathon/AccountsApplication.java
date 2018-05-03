@@ -8,10 +8,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 //@EnableDiscoveryClient
 public class AccountsApplication {
-
-
 	
 	public static void main(String[] args) {
 		SpringApplication.run(AccountsApplication.class, args);
+		System.out.println("Hello");
 	}
 }
